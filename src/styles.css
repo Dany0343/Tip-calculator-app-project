@@ -293,6 +293,12 @@ header {
         margin-block-start: 40px;
         margin-block-end: 80px
     }
+    .container {
+        margin-block-start: 50px;
+    }
+    .header__logo {
+        margin-block-start: 50px;
+    }
 }
 @media (min-height: 700px) {
     .container {
