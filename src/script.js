@@ -55,11 +55,11 @@ function eventListeners() {
 }
 function calcular() {
     if(total != 0 && tipAmount >= 0 && totalPeople >= 1 && totalPeople <= 30) {
-        tipByPerson = (total * tipAmount / 100) / totalPeople;
-        totalTip.textContent = `$${tipByPerson.toFixed(2)}` // Se agrega a la pantalla, propina por persona
+        tipByPerson = ((total * tipAmount / 100) / totalPeople).toFixed(2);
+        totalTip.textContent = `$${tipByPerson}` // Se agrega a la pantalla, propina por persona
 
-        totalByPerson = (((tipByPerson * totalPeople) + total) / totalPeople);
-        totalMoney.textContent = `$${totalByPerson.toFixed(2)}`;
+        totalByPerson = ((((tipByPerson * totalPeople) + total) / totalPeople)).toFixed(2);
+        totalMoney.textContent = `$${totalByPerson}`;
     }
 }
 
