@@ -41,10 +41,10 @@
           </section>
       
           <section class="main__people">
-            <p>Number of people</p>
+            <p>Number of people &emsp;<span style="color: rgb(212 166 156); display: none;" id="error">Can't be zero!</span></p>
             <div class="main__people--quantity">
               <div></div>
-              <input type="number" class="main__people--input number number" placeholder="0">
+              <input type="number" class="main__people--input number" placeholder="0">
             </div>
           </section>
         </section>
@@ -53,11 +53,11 @@
           <section class="main__results">
             <div class="main__results--amount">
               <p>Tip Amount <br> <span class="main__results--detail">/ person</span></p>
-              <span class="main__results--quantity">$0.00</span>
+              <span class="main__results--quantity" id="totalTip">$0.00</span>
             </div>
             <div class="main__results--total">
               <p>Total <br> <span class="main__results--detail">/ person</span></p>
-              <span class="main__results--quantity">$0.00</span>
+              <span class="main__results--quantity" id="totalPerson">$0.00</span>
             </div>
             <button class="main__results--button">RESET</button>
           </section>

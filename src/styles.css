@@ -17,6 +17,9 @@
     --standard: 1.4rem;
     --special: 2.4rem;
     --weight: 700;
+
+    --hoverExtra: rgb(159 232 223);
+    --errorColor: rgb(212 166 156);
   }
 html {
     font-size: 62.5%;
@@ -112,7 +115,7 @@ header {
     border-radius: 5px;
 }
 .main__tip--percentages .grid--item:hover {
-    background-color: var(--strongCyan);
+    background-color: var(--hoverExtra);
     color: var(--veryDarkCyan);
     font-weight: var(--weight);
 }
@@ -120,7 +123,6 @@ header {
     color: var(--grayishCyan);
     background-color: var(--white);
     font-weight: var(--weight);
-    margin-inline-start: 10px;
     border: 0;
     text-align: center;
 }
@@ -154,7 +156,7 @@ header {
 }
 .main__people--quantity:hover {
     border-radius: 5px;
-    border: 2px solid orangered;
+    border: 2px solid var(--strongCyan);
 }
 .main__people--quantity {
     height: 40px;
@@ -218,6 +220,9 @@ header {
     font-weight: var(--weight);
     color: var(--veryDarkCyan);
     background-color: var(--strongCyan);
+}
+.main__results--button:hover {
+    background-color: var(--hoverExtra);
 }
 .main__results--quantity {
     color: var(--strongCyan);
