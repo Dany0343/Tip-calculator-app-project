@@ -68,6 +68,6 @@ function limpiar() {
     tip.value = 0;
     tipInput.textContent = "Custom";
     people.value = 0;
-    totalTip.value = 0;
-    totalMoney.value = 0;
+    totalTip.textContent = "$0";
+    totalMoney.textContent = "$0";
 }
